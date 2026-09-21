@@ -1,3 +1,4 @@
-name = input("Имя: ")
-age = int(input("Возраст: "))
-print(f'Привет, {name}! Через год тебе будет {age+1}')
+m = int(input("Минуты: "))
+h = m // 60
+mm = m % 60
+print(f"{h}:{mm:02d}")

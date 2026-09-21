@@ -1,3 +1,6 @@
-name = input("Имя: ")
-age = int(input("Возраст: "))
-print(f'Привет, {name}! Через год тебе будет {age+1}')
+fio = input("ФИО: ")
+words = fio.split()
+initials = "".join(w[0].upper() for w in words) + "."
+clean = " ".join(words)
+print(f"Инициалы: {initials}")
+print(f"Длина (символов): {len(clean)}")
