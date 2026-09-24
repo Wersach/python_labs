@@ -1,8 +1,8 @@
-def parse_num(s):
-    return float(s.strip().replace(",", "."))
+def get_num(s):
+    return float(s.replace(",", "."))
 
-a = parse_num(input("a: "))
-b = parse_num(input("b: "))
+a = get_num(input("a: "))
+b = get_num(input("b: "))
 total = a + b
 avg = total / 2
 print(f"sum={total:.2f}; avg={avg:.2f}")

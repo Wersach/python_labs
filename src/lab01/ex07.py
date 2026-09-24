@@ -1,15 +1,32 @@
 s = input()
 
-start = next(i for i, c in enumerate(s) if c.isupper())
-digit_i = next(i for i in range(start, len(s)) if s[i].isdigit())
-step = (digit_i + 1) - start
+digits = "0123456789"
+upper_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-result = []
+start = -1
+i = 0
+while i < len(s):
+    if s[i] in upper_letters:
+        start = i
+        break
+    i += 1
+
+digit_pos = -1
+i = start
+while i < len(s):
+    if s[i] in digits:
+        digit_pos = i
+        break
+    i += 1
+
+step = (digit_pos + 1) - start
+
+result = ""
 i = start
 while True:
-    result.append(s[i])
+    result = result + s[i]
     if s[i] == ".":
         break
-    i += step
+    i = i + step
 
-print("".join(result))
+print(result)
