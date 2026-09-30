@@ -1,4 +1,4 @@
-s = input()
+s = input("in: ")
 
 digits = "0123456789"
 upper_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -29,4 +29,4 @@ while True:
         break
     i = i + step
 
-print(result)
+print("out: " + result)
