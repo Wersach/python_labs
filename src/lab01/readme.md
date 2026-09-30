@@ -24,11 +24,11 @@
 
 Программа:
 
-![alt text](../../images/lab01/3pr.png)
+![alt text](../../images/lab01/3prn.png)
 
 Запуск:
 
-![alt text](../../images/lab01/3z.png)
+![alt text](../../images/lab01/3zn.png)
 
 ### **4 задание**
 
@@ -54,18 +54,18 @@
 
 Программа:
 
-![alt text](../../images/lab01/6pr.png)
+![alt text](../../images/lab01/6prn.png)
 
 Запуск:
 
-![alt text](../../images/lab01/6z.png)
+![alt text](../../images/lab01/6zn.png)
 
 ### **7 задание**
 
 Программа:
 
-![alt text](../../images/lab01/7pr.png)
+![alt text](../../images/lab01/7prn.png)
 
 Запуск:
 
-![alt text](../../images/lab01/7z.png)
+![alt text](../../images/lab01/7zn.png)
