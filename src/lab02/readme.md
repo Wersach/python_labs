@@ -41,7 +41,7 @@
 
 Программа:
 
-![alt text](../../images/lab02/00pr.png)
+![alt text](../../images/lab02/00.png)
 
 **transpose**
 
