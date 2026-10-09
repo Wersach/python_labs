@@ -4,8 +4,14 @@ def format_record(rec):
     ValueError: в ФИО меньше двух слов, пустая группа, GPA не от 0 до 5.
     TypeError: GPA не число.
     """
+    if type(rec) != tuple:
+        raise TypeError("Wrong Type")
+    if len(rec) != 3:
+        raise ValueError("too many values")
+    
     fio, group, gpa = rec
     words = fio.split()
+
     if len(words) < 2:
         raise ValueError("в ФИО должны быть фамилия и имя")
     if group.strip() == "":
@@ -35,6 +41,8 @@ bad = [
     ("Иванов Иван", "", 4.6),
     ("Иванов Иван", "BIVT-25", "5"),
     ("Иванов Иван", "BIVT-25", 5.5),
+    ["Иванов Иван", "BIVT-25", 4.6],
+    ("Иванов Иван", "BIVT-25", 5.5, "123")
 ]
 for rec in bad:
     try:
