@@ -13,7 +13,7 @@ print(f"Всего слов: {len(tokens)}")
 print(f"Уникальных слов: {len(freq)}")
 print("Топ-5:")
 
-TABLE = True
+TABLE = False
 
 if TABLE:
     width = len("слово")
