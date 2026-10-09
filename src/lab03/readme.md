@@ -4,11 +4,11 @@
 
 Программа:
 
-![alt text](../../images/lab03/img01.png)
+![alt text](../../images/lab03/img1.png)
 
 Запуск:
 
-![alt text](../../images/lab03/img02.png)
+![alt text](../../images/lab03/img2.png)
 
 ### **Задание B — src/lab03/text_stats.py**
 
@@ -16,12 +16,12 @@
 
 Программа:
 
-![alt text](../../images/lab03/img03.png)
+![alt text](../../images/lab03/img3.png)
 
 Запуск:
 
-![alt text](../../images/lab03/img04.png)
+![alt text](../../images/lab03/img4.png)
 
 ### **Дополнительно — табличный вывод**
 
-![alt text](../../images/lab03/img05.png)
+![alt text](../../images/lab03/img5.png)
