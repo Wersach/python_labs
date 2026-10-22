@@ -4,7 +4,7 @@
 
 Программа:
 
-![alt text](../../images/lab03/img1.png)
+![alt text](../../images/lab03/image1.png)
 
 Запуск:
 

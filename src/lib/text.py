@@ -16,19 +16,29 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
 
 def tokenize(text: str) -> list[str]:
     """Делит текст на слова: буквы, цифры, _ и дефис внутри слова."""
+    if type(text) != str:
+        raise TypeError("нужна строка")
     return re.findall(r"\w+(?:-\w+)*", text)
 
 
 def count_freq(tokens: list[str]) -> dict[str, int]:
     """Считает, сколько раз встречается каждое слово."""
+    if type(tokens) != list:
+        raise TypeError("нужен список")
     freq = {}
     for token in tokens:
+        if type(token) != str:
+            raise TypeError("слова должны быть строками")
         freq[token] = freq.get(token, 0) + 1
     return freq
 
 
 def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
     """Возвращает n самых частых слов. При равенстве частот идут по алфавиту."""
+    if type(freq) != dict:
+        raise TypeError("нужен словарь")
+    if type(n) != int:
+        raise TypeError("n должно быть целым числом")
     if n < 0:
         raise ValueError("n не может быть отрицательным")
     items = sorted(freq.items(), key=lambda pair: (-pair[1], pair[0]))
